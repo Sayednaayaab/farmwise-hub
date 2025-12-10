@@ -49,11 +49,11 @@ const Market = () => {
             <Input placeholder="Search commodities..." className="pl-10" />
           </div>
           <div className="flex gap-3">
-            <Button variant="outline">
+            <Button variant="outline" onClick={() => alert('Filters applied!')}>
               <Filter className="mr-2 h-4 w-4" />
               Filters
             </Button>
-            <Button variant="hero">
+            <Button variant="hero" onClick={() => alert('Alerts set!')}>
               <Bell className="mr-2 h-4 w-4" />
               Set Alerts
             </Button>

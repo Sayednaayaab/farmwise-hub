@@ -29,14 +29,14 @@ import {
 import { cn } from "@/lib/utils";
 
 const toolsItems = [
-  { icon: Calendar, label: "Planting Calendar", href: "/tools/calendar", desc: "Plan your crop cycles" },
-  { icon: Bug, label: "Pest Alerts", href: "/tools/pests", desc: "Image-based pest detection" },
-  { icon: Tractor, label: "Equipment", href: "/tools/equipment", desc: "Track farm machinery" },
+  { icon: Calendar, label: "Planting Calendar", href: "/planting-calendar", desc: "Plan your crop cycles" },
+  { icon: Bug, label: "Pest Alerts", href: "/pest-alerts", desc: "Image-based pest detection" },
+  { icon: Tractor, label: "Equipment", href: "/equipment", desc: "Track farm machinery" },
 ];
 
 const resourcesItems = [
-  { icon: BookOpen, label: "Knowledge Base", href: "/resources/knowledge", desc: "Articles & tutorials" },
-  { icon: Leaf, label: "Sustainable Practices", href: "/resources/sustainable", desc: "Eco-friendly farming" },
+  { icon: BookOpen, label: "Knowledge Base", href: "/knowledge-base", desc: "Articles & tutorials" },
+  { icon: Leaf, label: "Sustainable Practices", href: "/sustainable-practices", desc: "Eco-friendly farming" },
 ];
 
 export const Navbar = () => {
@@ -209,8 +209,11 @@ export const Navbar = () => {
               <Link to="/community" className="block rounded-lg px-4 py-3 text-sm font-medium hover:bg-accent" onClick={() => setMobileOpen(false)}>
                 Community
               </Link>
-              <Link to="/resources/knowledge" className="block rounded-lg px-4 py-3 text-sm font-medium hover:bg-accent" onClick={() => setMobileOpen(false)}>
+              <Link to="/knowledge-base" className="block rounded-lg px-4 py-3 text-sm font-medium hover:bg-accent" onClick={() => setMobileOpen(false)}>
                 Knowledge Base
+              </Link>
+              <Link to="/sustainable-practices" className="block rounded-lg px-4 py-3 text-sm font-medium hover:bg-accent" onClick={() => setMobileOpen(false)}>
+                Sustainable Practices
               </Link>
               <Link to="/contact" className="block rounded-lg px-4 py-3 text-sm font-medium hover:bg-accent" onClick={() => setMobileOpen(false)}>
                 Contact

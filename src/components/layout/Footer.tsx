@@ -23,7 +23,7 @@ export const Footer = () => {
               <p className="mb-2 text-sm font-medium">Subscribe to our newsletter</p>
               <div className="flex gap-2">
                 <Input placeholder="Enter your email" className="max-w-[220px]" />
-                <Button variant="hero" size="sm">
+                <Button variant="hero" size="sm" onClick={() => alert('Subscribed successfully!')}>
                   <Mail className="mr-1 h-4 w-4" />
                   Subscribe
                 </Button>

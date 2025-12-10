@@ -38,11 +38,11 @@ export const HeroSection = () => {
             </p>
 
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
-              <Button variant="hero" size="xl">
+              <Button variant="hero" size="xl" onClick={() => alert('Starting free trial...')}>
                 Start Free Trial
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="heroOutline" size="xl">
+              <Button variant="heroOutline" size="xl" onClick={() => alert('Watching demo...')}>
                 Watch Demo
               </Button>
             </div>

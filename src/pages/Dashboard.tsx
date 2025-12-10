@@ -90,11 +90,11 @@ const Dashboard = () => {
             <p className="text-muted-foreground">Welcome back! Here's your farm overview.</p>
           </div>
           <div className="flex gap-3">
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" onClick={() => alert('Opening calendar...')}>
               <Calendar className="mr-2 h-4 w-4" />
               Dec 9, 2025
             </Button>
-            <Button variant="hero" size="sm">
+            <Button variant="hero" size="sm" onClick={() => alert('Viewing alerts...')}>
               <Bell className="mr-2 h-4 w-4" />
               3 Alerts
             </Button>
@@ -150,7 +150,7 @@ const Dashboard = () => {
                   <CardTitle>Crop Progress</CardTitle>
                   <CardDescription>Track your crops' growth stages</CardDescription>
                 </div>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" onClick={() => alert('More options...')}>
                   <MoreHorizontal className="h-4 w-4" />
                 </Button>
               </CardHeader>

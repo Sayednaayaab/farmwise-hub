@@ -92,7 +92,7 @@ const Community = () => {
             <h1 className="text-3xl font-bold text-foreground">Community Forum</h1>
             <p className="text-muted-foreground">Connect with fellow farmers and share knowledge</p>
           </div>
-          <Button variant="hero">
+          <Button variant="hero" onClick={() => alert('Creating new discussion...')}>
             <Plus className="mr-2 h-4 w-4" />
             New Discussion
           </Button>
@@ -116,9 +116,10 @@ const Community = () => {
                 {categories.map((cat) => (
                   <button
                     key={cat.name}
+                    onClick={() => alert(`Filtering by ${cat.name}...`)}
                     className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm transition-colors ${
-                      cat.active 
-                        ? "bg-primary/10 text-primary font-medium" 
+                      cat.active
+                        ? "bg-primary/10 text-primary font-medium"
                         : "hover:bg-muted"
                     }`}
                   >
